@@ -11,7 +11,8 @@ broad statement of readiness.
 | Sub-objective | Coverage | Knowledge | Application | Retention |
 |---|---|---|---|---|
 | 4.8 Incident response activities | Well Covered (validated notes) | Not yet assessed — practice batch 1 pending grading | Not yet assessed | Not yet assessed |
-| All other sub-objectives (27 of 28) | Not Assessed | Not yet assessed | Not yet assessed | Not yet assessed |
+| 1.1 Types of security controls | Well Covered (validated notes) | Batch 2 (n=5, pre-bootcamp): 2 correct, 1 partial, 2 missed; type/category confusion | Not yet assessed | Not yet assessed |
+| All other sub-objectives (26 of 28) | Not Assessed | Not yet assessed | Not yet assessed | Not yet assessed |
 
 ## Honest summary
 

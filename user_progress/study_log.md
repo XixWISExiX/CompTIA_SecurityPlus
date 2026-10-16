@@ -180,3 +180,8 @@ standing rule in `CLAUDE.md`.
 - Recorded the 4.8 gap check in `incident-response-activities.md` (retroactive, from the validated note; slides not re-rendered). 4.8 changed from Well Covered to **Weakly Covered** (Detection/Analysis not split; tabletop/simulation are one-liners). Updated objective_mapping.md and coverage_tracker.md accordingly.
 - No slide extraction remains. Pt1 p.1-15 (course overview/logistics) is non-exam content and intentionally has no unit.
 - **Next:** practice batches (10-15 questions) on validated units; ask which bootcamp topic is current.
+
+## 2026-10-16 — Demo quiz (1.1) graded
+
+- User requested a short quiz to see the workflow. 5 questions on 1.1 (validated). User had not taken the bootcamp yet. Graded: 2 correct, 1 partial, 2 missed; all misses classified concept confusion. Logged in assessment_history.md (Batch 2), weakness_ledger.md, review_queue.md (3 retests), knowledge_profile.md.
+- Batch 1 (4.8) remains ungraded.

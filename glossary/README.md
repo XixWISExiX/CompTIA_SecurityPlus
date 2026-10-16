@@ -284,3 +284,193 @@ _From [05-security-program-management-and-oversight/risk-management-process.md](
 - **Residual / inherent / control risk** — risk after controls / risk without controls / how much less effective a control has become over time.
 - **Risk strategies** — acceptance (exception = short-term, exemption = longer-term per slides), avoidance, transference (insurance, third party, SLA), mitigation, deterrence (log-in banner).
 - **BIA metrics** — MTD (= RTO + WRT), RTO (time to recover), RPO (tolerable data loss, measured in time), WRT, MEF, SPoF, MTBF (repairable), MTTF (non-repairable), MTTR (time to repair).
+
+## Security compliance (Domain 5)
+
+_From [05-security-program-management-and-oversight/effective-security-compliance.md](../course-unit-notes/05-security-program-management-and-oversight/effective-security-compliance.md) (sub-objective 5.4, validated)._
+
+- **Internal vs. external compliance reporting** — internal = operational detail for risk managers, executives, security analysts, privacy officers; external = regulatory/high-level summaries for customers, clients, regulators, vendors, partners.
+- **SSAE / SOC 1-2-3** — AICPA attestation spec for cloud/hosting providers. SOC 1 = financial reporting controls; SOC 2 = detailed, NDA required, security/availability/confidentiality/processing integrity/privacy; SOC 3 = short, broad, general distribution. Type I = design of controls; Type II = ongoing effectiveness over 6-12 months.
+- **Consequences of non-compliance** — fines, legal sanctions, reputational damage, license/usage-rights revocation, lawsuits, extra audits; contractually: breach, termination, indemnification/liability, penalties.
+- **Attestation and acknowledgment** — formal signed agreements, policy acknowledgments, training sign-offs confirming understanding of compliance obligations.
+- **Due diligence / due care / due process** — diligence = reasonable steps to satisfy legal requirement (assessment); care = mitigation actions on risks found in diligence; process = respecting personnel's rights.
+- **GDPR** — EU/EEA personal data; informed consent required; data subjects may withdraw consent and inspect, amend, or erase data.
+- **FISMA / HIPAA / SOX / GLBA** — federal agency security (annual reviews) / health information / financial reporting integrity in public companies / financial-institution consumer data.
+- **Data subject / data owner / controller / processor** — subject = individual identified by the data; owner = senior executive accountable for CIA of an asset; controller = decides purposes and means; processor = processes only on controller's instructions. Organizations are custodians/stewards, not owners, of personal data.
+- **Data inventory / data retention** — classified list of data held (drives retention periods); keep personal data only as long as needed or required by law.
+- **Right to be forgotten (RTBF)** — right to erasure; data subject may request deletion (GDPR; also Argentina, Philippines).
+
+## Audits and assessments (Domain 5)
+
+_From [05-security-program-management-and-oversight/audits-and-assessments.md](../course-unit-notes/05-security-program-management-and-oversight/audits-and-assessments.md) (sub-objective 5.5, validated)._
+
+- **Attestation** — formal declaration, by an independent qualified entity, that security controls comply with standards/regulations (Pt7 p.31).
+- **Compliance assessment / audit committee / self-assessment** — internal: check practices against laws and policies / independent board members overseeing financial reporting, controls, and the external audit / internal personnel evaluate themselves against predetermined metrics (Pt7 p.32).
+- **Regulatory / examination / assessment / independent third-party audit** — external: agency checks of legal compliance / formal evaluation by auditors or regulators / broad review by outside consultants / unbiased audit free of conflicts of interest (Pt7 p.33-34).
+- **Internal vs. external vs. third-party audit** — own personnel / vendor or contractor engaged by the company / party unrelated and never engaged by the company (accreditation, auditing your auditors) (Pt7 p.35).
+- **Penetration test** — authorized hacking that mimics a real-world threat to find and exploit weaknesses (Pt7 p.36).
+- **Physical / offensive / defensive / integrated pen test** — physical controls / red teaming / ability to detect and respond / combined methodologies across systems, apps, and physical (Pt7 p.37).
+- **Known / partially known / unknown environment** — white-box (full knowledge) / gray-box (partial) / black-box (zero). Blind (single-blind) = staff informed; double-blind = staff not told (Pt7 p.38).
+- **Blue / red / white / purple team** — defenders / attackers / referee setting rules of engagement / red+blue collaboration (Pt7 p.39). **Yellow / orange / green** — builders / red+yellow / blue+yellow (Pt7 p.40).
+- **Passive vs. active reconnaissance** — no traffic sent to target (OSINT, traffic analysis, war driving/flying, social engineering) vs. traffic sent to solicit responses (port scan, service enumeration, OS fingerprinting, DNS enumeration, web app crawling) (Pt7 p.41-42).
+- **Banner grabbing** — query a service (netcat, nmap, telnet) to learn server software/version (Pt7 p.44).
+- **Promiscuous mode** — NIC listens to all frames, not just those addressed to it; required for sniffing (Pt7 p.46).
+- **Phishing campaign** — internal training exercise sending simulated phishing messages; users who respond get follow-up training (Pt7 p.49).
+- **Anomalous behavior: risky / unexpected / unintentional** — threatens security (weak passwords, untrusted links) / violates policy or bypasses controls / no malicious intent but harmful (human error, falling for social engineering) (Pt7 p.50).
+- **"If you see something, say something"** — insider-threat awareness slogan; report suspicious behavior (Pt7 p.51).
+- **Role-based training / CBT / CTF / gamification** — training tailored to job role / computer-delivered (simulations, branching scenarios) / flag-capturing challenges, red vs blue / game mechanics (points, badges) applied to awareness (Pt7 p.54).
+- **Initial vs. recurring (training) measurement** — immediate effect (pre/post quizzes, surveys) vs. long-term retention and sustained behavior change (Pt7 p.56).
+
+## Security architecture models
+
+_From [03-security-architecture/security-implications-of-architecture-models.md](../course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md) (sub-objective 3.1, validated)._
+
+- **Responsibility Matrix (Shared Responsibility)** — security responsibility split between customer and Cloud Service Provider; the customer manages more layers in IaaS than PaaS, and none of the stack in SaaS (Pt3 p.54-55).
+- **IaaS / PaaS / SaaS** — customer manages OS and up / only applications and data / nothing (Pt3 p.54-55).
+- **Hybrid / Community / Private / Multi-Cloud** — public+private combined / several organizations sharing costs / owned and operated by one organization / services from multiple CSPs (Pt3 p.56).
+- **MSSP vs. SECaaS** — fully outsourced information-assurance responsibility vs. a single security control delivered from the cloud (Pt3 p.57).
+- **CASB** — software that mediates access to cloud services; SSO and access control, malware scanning, monitoring, data-exfiltration prevention; deployed as forward proxy, reverse proxy, or API (Pt3 p.59).
+- **Infrastructure as Code (IaC) / snowflake system** — scripted automation replacing manual configuration / a build unlike any other system, which IaC aims to eliminate (Pt3 p.60).
+- **Serverless (FaaS), SOA, Microservices** — functions in cloud runtime containers with no server management / loosely coupled services / highly decoupled, independently deployable services (Pt3 p.60).
+- **Air-gapped** — physically and logically isolated, no wired or wireless interfaces; slide calls it most secure (Pt3 p.61).
+- **SDN: control / data / management plane** — decisions about traffic / actual forwarding and access-control enforcement / monitoring traffic and network status (Pt3 p.62).
+- **Fog vs. Edge computing** — processing between IoT edge and data center to cut latency / servers and devices near the user or data origin (Pt3 p.63).
+- **Port security: static / dynamic / sticky learning** — MAC defined in advance / learned on connect / learned and kept in persistent memory across reboots (Pt3 p.75).
+- **Flood guard, STP, BPDU, DHCP snooping** — rate-based traffic limiting / loop-free switch topology / rogue-switch ("evil twin") attack per the slide / checks hosts are not spoofing MAC (Pt3 p.76).
+- **Collision vs. broadcast domains** — switches break up collision domains; routers break up broadcast domains (Pt3 p.78).
+- **NAT vs. PAT** — internal-to-external IP mapping at the firewall/router / also maps ports so many internal hosts share one external IP (Pt3 p.81).
+- **TCP three-way handshake and flags** — SYN, SYN-ACK, ACK; ACK/FIN/PSH/RST/SYN/URG (Pt3 p.84-85).
+- **Type I vs. Type II hypervisor** — bare metal on host hardware vs. hosted on top of the host OS (Pt3 p.90).
+- **Container vs. VM** — containers share one engine and host OS; VMs each carry a guest OS (Pt3 p.91).
+- **OT / ICS / SCADA** — network of embedded controllers vs. ICS that manages them vs. ICS for large, geographically spread sites (Pt3 p.94).
+- **Embedded system constraints; PLC, SoC, FPGA, RTOS** — cost, power, compute, weak crypto/authentication, implied trust, range (Pt3 p.95); PLC readymade embedded controller, SoC single-die design, FPGA customer-programmable, RTOS deterministic real-time OS (Pt3 p.96).
+- **Active-active vs. active-passive; fault tolerance; five nines** — load balancing / hot-spare failover / sustain operations through a component failure / 99.999% = 00:05:15 annual downtime (Pt3 p.97).
+- **Local / regional / geo-redundant replication** — single data center / multiple datacenters in one or two regions (zone-redundant) / distant secondary region (Pt3 p.98).
+- **Power events** — fault (momentary loss), blackout (complete loss), sag/dip (momentary low), brownout (prolonged low), spike (momentary high), surge (prolonged high) (Pt3 p.100).
+
+## Securing enterprise infrastructure (3.2)
+
+_From [03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md](../course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md) (sub-objective 3.2, validated)._
+
+- **Fail-open (fail safe) vs. fail-closed (fail secure)** — logical: availability kept but data may be exposed / data secure but availability lost; physical: entrances unlocked, humans safe / entrances locked, access blocked (Pt4 p.4).
+- **Security zone; attack surface; attack vector** — area with one security configuration for all hosts / points exposed to external input or connections / a specific path to unauthorized access (Pt4 p.3).
+- **SPAN (mirror port) vs. TAP** — switch port receiving copies of frames / passive (splitter, physical copy) or active (powered, regenerates signal) test access point (Pt4 p.5).
+- **Jump server** — hardened server providing access to other hosts (Pt4 p.6).
+- **Forward, reverse, caching, content-filtering, open, anonymizing proxy** — see note; reverse proxy sits on the server side (filtering, SSL decryption, static content, load balancing) (Pt4 p.7-8).
+- **Load balancer** — spreads processing across systems; best for stateless; survivors pick up load on failure (Pt4 p.9).
+- **IDS vs. IPS; HIDS/HIPS vs. NIDS/NIPS** — detect and report / reactive in-line blocking; host-based can read encrypted traffic, network-based cannot see inside a host (Pt4 p.10-11).
+- **802.1X (PNAC) and EAP** — port-based network access control at the data link layer; EAP-MD5 / -TLS / -TTLS / -FAST, PEAP, LEAP (Pt4 p.13-14).
+- **Stateless vs. stateful (SPI) firewall; layer 4 vs. layer 7 inspection** — ports/protocols/IPs / dynamic state table of TCP sessions; SPI inspects the TCP handshake (L4) or content (L7) (Pt4 p.15-16).
+- **WAF, SWG, UTM** — HTTP/HTTPS content-filtering firewall / on-premises proxy-based filter+IDS/IPS for user Internet access / all-in-one firewall, IDS/IPS, AV, VPN, web filtering (Pt4 p.21-22).
+- **VPN: site-to-site, remote access, always-on, split tunnel, full tunnel** — Pt4 p.26-29.
+- **PPTP, L2F, L2TP** — obsolete/no-encryption/authentication-only layer 2 tunnels; L2TP with IPsec adds confidentiality (Pt4 p.30).
+- **IPsec: SA, IKE, AH, ESP; transport vs. tunnel mode** — AH = integrity/authentication, ESP = plus confidentiality; transport encrypts payload only, tunnel encrypts whole packet in a new IP header; IKE phase 1 secure channel, phase 2 IPsec SA (Pt4 p.31-34).
+- **SD-WAN; SASE** — virtual WAN over MPLS/LTE/broadband with microsegmentation / cloud-delivered SWG, CASB, ZTNA, FWaaS plus WAN (Pt4 p.36-37).
+- **Defense in depth (the FAN)** — layered perimeter, network, application, and data security around mission-critical assets, spanning technology, process, and people (Pt4 p.39).
+
+## Protecting data (3.3)
+
+_From [03-security-architecture/concepts-and-strategies-to-protect-data.md](../course-unit-notes/03-security-architecture/concepts-and-strategies-to-protect-data.md) (sub-objective 3.3, validated)._
+
+- **Regulated / trade secret / legal / financial data** — compliance-governed by law or industry rules / IP giving advantage but unregistered (no copyright, trademark, patent) / contracts, court and regulatory records / bank, investment, payroll, tax (Pt4 p.42-43).
+- **Human- vs. non-human-readable data** — readable with basic viewer software / needs a specialized processor or algorithm (binary, encrypted, encoded) (Pt4 p.43).
+- **Classification labels** — Public (Unclassified), Confidential (Secret, NDA third parties), Critical (Top Secret), Proprietary/IP, Private/Personal (PII), Sensitive (personal-data context; GDPR list), Restricted (stringent controls) (Pt4 p.44-45).
+- **Data at rest / in motion (in transit) / in use; data replication** — in storage / across a network / in an application or memory / backup or copy and its protection (Pt4 p.46).
+- **Data sovereignty; geographical considerations** — jurisdiction restricts processing/storage to systems inside it / pick storage locations and set access controls by client location (Pt4 p.47).
+- **Masking vs. tokenization** — replace with fictional/partial values keeping format and length / replace with a random token, original stored separately (Pt4 p.48).
+- **Hashing; obfuscation; segmentation; permission restrictions; geographic restrictions** — fixed-length output / harder to understand or reverse engineer, same function / isolated components limit breach impact / access by user permissions / access by location (Pt4 p.48).
+- **Data minimization; deidentification; anonymization; pseudo-anonymization; reidentification attack; k-anonymity** — Pt4 p.49.
+
+## Resilience and recovery (3.4)
+
+_From [03-security-architecture/resilience-and-recovery-in-security-architecture.md](../course-unit-notes/03-security-architecture/resilience-and-recovery-in-security-architecture.md)_
+
+- **Failover (high availability) cluster vs. load balancing cluster** — secondary server takes over if primary fails (DNS, domain controllers) / servers share load and replicate data so each holds the same information (Pt4 p.52).
+- **NIC teaming / adapter teaming** — multiple NICs or ports give load balancing at the adapter level; clustering works at the service level (Pt4 p.53).
+- **Cold / warm / hot / mobile site; geographic dispersion; CoOP site** — empty or near-empty, up in days to a week ($) / peripherals and software, backups days or weeks old, up in hours to 3 days ($$) / fully configured, up in minutes to an hour ($$$) / portable / replicated between distant sites / recovery, alternate, or backup site (Pt4 p.54).
+- **Platform, technology, control, vendor, crypto, software diversity** — mix of OSes and hardware / mix of OSes, apps, languages, virtualization / mix of control classes and functions / multiple suppliers / varied algorithms and implementations / different binary per build (Pt4 p.55-56).
+- **Multi-cloud** — spreads risk across providers; primary on one, backup and DR on another (Pt4 p.57).
+- **COOP (Continuity of Operations Plan)** — keeps critical functions running or quickly resumed; government term similar to business continuity planning; alternate site for up to 30 days (Pt4 p.58).
+- **Capacity planning** — forecast people, technology, and infrastructure needs (Pt4 p.59).
+- **Tabletop / failover / simulation / parallel processing tests** — discuss the scenario / intentionally fail the primary (full-interruption, live) / teams carry out recovery in a realistic drill / run primary and backup together, duplicating transactions (Pt4 p.60-63).
+- **Three factors of data risk** — time, quantity, access (Pt4 p.64).
+- **Backup media; NAS vs. SAN** — disk, tape, NAS, SAN, cloud / NAS = file-level over SMB or FTP; SAN = block-level over Fibre Channel, SCSI, SAS, or InfiniBand (Pt4 p.68).
+- **Non-persistence; snapshot; rollback; live boot media; master image; template build** — static instance with data separated / saved state / restore baseline (e.g., Windows System Restore) / boots read-only to memory / gold disk / build from instructions (Pt4 p.69).
+- **Tape rotation: GFS, Tower of Hanoi, FIFO** — daily, weekly, monthly cycles / recursive, even wear / oldest media overwritten (Pt4 p.70).
+- **Database replication; shadow database; remote journaling (log shipping); JFS** — live mirror serving clients / one-way mirror clients do not access / transactions shipped to another site, recover from checkpoint plus journal / file system with a change log (Pt4 p.71).
+- **Full / incremental / differential backup** — all data, clears archive bit / changes since last backup, clears bit, restore = full + all incrementals / changes since last full, does not clear bit, restore = full + latest differential (Pt4 p.72-73).
+- **RAID 0, 1, 3, 4, 5, 6, 10 (0+1); multipath** — striping, no redundancy (2 drives) / mirroring (2) / byte stripe, dedicated parity (3) / block stripe, dedicated parity (3) / distributed parity, one disk can fail (3) / double parity, two can fail (4) / mirrors then striped (4) / extra controllers and cabling for failover to storage (Pt4 p.74-81).
+- **Dual PSU; managed PDU; UPS; backup generators** — hot-plug redundant supplies / strip socket with filtered voltage and remote administration / surge suppressor plus battery (surges, spikes, sags, brownouts, blackouts) / portable gas, permanently installed (natural gas or propane, auto-start), battery-inverter (Pt4 p.82).
+
+## Security controls (1.1)
+
+- **Security control categories: Managerial (Administrative), Physical, Operational, Technical (Logical)** — policy/procedure oversight / physical assets against in-person intrusion / implemented primarily by people / software, hardware, or firmware restricting logical access (Pt1 p.19). Technical and Physical controls should be supported with Administrative controls (Pt1 p.19).
+- **Security control types: Directive, Deterrent, Detective, Preventive, Compensating/Alternative, Corrective/Recovery** — instruct on rules of behavior / discourage violations / warn after unwanted activity is discovered / proactively stop it / make up for deficiencies in other controls / fix a problem or restore the baseline after an incident (Pt1 p.20).
+
+## Fundamental security concepts (1.2)
+
+- **CIA triad** — Confidentiality (vs. disclosure; only shared among persons or organizations), Integrity (vs. alteration; accurate, trustworthy, reliable), Availability (vs. destruction; accessible when needed) (Pt1 p.23). Slide base labels it "5 Pillars of Information Security" with three drawn.
+- **Confidentiality concepts** — sensitivity, discretion, criticality, concealment ("security through obscurity"), secrecy, privacy, seclusion, isolation (Pt1 p.24).
+- **Integrity concepts** — accuracy, truthfulness, authenticity, validity, non-repudiation, accountability, responsibility, completeness, comprehensiveness (Pt1 p.25). **Availability concepts** — usability, accessibility, timeliness (Pt1 p.26).
+- **Non-repudiation** — a subject cannot deny doing something; proof of origin, authenticity and integrity (digital signatures) (Pt1 p.25).
+- **Identification / authentication / authorization / auditing / accounting** — claiming to be someone / proving it / allowing resource access / recording and reviewing logs / holding subjects accountable (Pt1 p.27). **Mutual authentication** — client and server verify each other, reducing MiTM probability (Pt1 p.27).
+- **Least privilege vs. need to know** — minimum access to do the job / more granular: must need that specific information (Pt1 p.28).
+- **X.500; LDAP; LDAPS** — ISO directory standard, inverted-tree hierarchy (used by AD, UNIX/Linux) / subset of X.500, port 389 (TCP or UDP per slide), can be plaintext, TLS supported / LDAP Secure, port 636 (Pt1 p.29).
+- **Kerberos; KDC; AS; TGS; TGT; service server** — ticket-based, mostly symmetric keys, UDP 88, prevents eavesdropping/replay/MiTM / holds AS + TGS + database / handles user authentication / issues TGT and session key / holds session key, expiry, IP, used to get service tickets / grants access on valid ticket (Pt1 p.30-31).
+- **Gap analysis** — review of the difference between current and desired (or industry-required) security state; done when adopting a framework or meeting a new requirement (Pt1 p.32).
+- **Zero trust; microsegmentation; east-west vs. north-south traffic** — no implicit trust, continuous authentication/authorization/posture validation / policies applied to a single node (single-host zone) / server-to-server inside the data center vs. client-to/from the data center (Pt1 p.33).
+- **Adaptive identity; threat scope reduction; policy-driven access control; implicit trust zone** — continuous, context-based verification / need-to-know, task-limited access shrinks attack surface / policies based on identity, device posture, network context / data pathway between the PEP and the resource (Pt1 p.34).
+- **Control plane; data plane (forwarding plane); management plane** — policies, routing decisions (OSPF, BGP, MPLS) / forwards packets as directed (implicit trust zones) / configures and monitors devices (SNMP, SSH, Telnet) (Pt1 p.36).
+- **PDP, Policy Engine, Policy Administrator, PEP** — makes access decisions (control plane) / grant, deny, revoke / issues tokens, sets up/tears down sessions, tells PEP allow or disallow / gatekeeper enforcing decisions, allows/monitors/terminates connections (data plane) (Pt1 p.35, p.37-38).
+- **Bollard; access control vestibule (mantrap)** — post/planter stopping vehicles / two interlocked doors, each with separate authentication, prevents tailgating and piggybacking (Pt1 p.39-40).
+- **Tailgating vs. piggybacking** — following an approved person without their knowledge / convincing an authorized person to let you in (e.g., "forgot my badge") (Pt1 p.41).
+- **Fencing heights** — 3-4 ft deters casual trespassers; 6-7 ft too high to climb easily; 8 ft (with wire) deters determined intruders (Pt1 p.42).
+- **CCTV; IP camera** — detective device aiding guards; analog CRT vs. digital CCD; IP-based cameras on a separate network (Pt1 p.43).
+- **Proximity reader; smart card; CAC; PIV** — contactless card (PIN = two-factor) / card with embedded memory, chip, RFID/NFC/magstripe / DoD smart card / U.S. federal employee and contractor smart card (Pt1 p.45).
+- **Lighting** — both detective and deterrent (Pt1 p.46).
+- **Sensors** — alarm; infrared-based motion detection; pressure (force/weight); ultrasonic and microwave (Doppler-like echo); photoelectric (broken beam) (Pt1 p.47).
+- **Hot/cold aisles; fire classes A, B, C, D, K** — cold aisle = intake, hot = exhaust / common combustibles (water, soda acid), liquids (halon, argon, FM-200, CO2, soda acid), electrical (halon, argon, FM-200, CO2), combustible metals (dry powder, halon), kitchen (wet chemicals, foam) (Pt1 p.48-49). **Halon** banned in 1994 (Pt1 p.49).
+- **Locks; key control; signs; logon banner** — resist picking/drilling/bypass / records of key holders / mark restricted areas and escort-required zones / pop-up stating only authorized users allowed; must accept AUP (Pt1 p.50).
+- **Honeypot; honeynet; honeyfile / honeytoken; fake telemetry; DNS sinkhole** — fake attractive system / fake network segment (can include fake wireless) / bait file (honeyfile = bait, honeytoken = tracking) / spoofed data returned to scans / routes suspicious traffic to e.g. a honeynet for analysis (Pt1 p.51).
+
+## Change management
+
+_From [01-general-security-concepts/change-management-processes.md](../course-unit-notes/01-general-security-concepts/change-management-processes.md) (sub-objective 1.3, validated)._
+
+- **Request for change (RFC)** — the submission that starts the change approval process; outlines the change's purpose, scope, and potential impact.
+- **Change owner** — the individual or group primarily responsible for implementing a specific change and accountable for it going as planned.
+- **Impact analysis** — identifying the potential implications of a proposed change for users, business processes, and interconnected systems.
+- **Backout plan** — contingency plan to reverse a failed change and return systems to their original state.
+- **Maintenance window** — predefined, recurring time frame, usually low-activity, for implementing changes.
+- **Standard operating procedure (SOP)** — detailed written instructions for routine operations or changes; developed during testing.
+- **Allow list / deny list (change management)** — pre-approved software, hardware, and change types that skip the full process, versus explicitly blocked ones.
+- **Restricted activities** — changes needing extra scrutiny or higher approval due to impact on critical systems, sensitive data, or compliance.
+- **Version control** — an ID system for each iteration of a software product (customer version ID, developer build ID; e.g., 1.0 major, 1.0.2 minor).
+
+## Cryptographic solutions (1.4)
+
+Note: [cryptographic-solutions.md](../course-unit-notes/01-general-security-concepts/cryptographic-solutions.md)
+
+- **PKI** — third party that creates, issues and manages keys/certificates; not an encryption algorithm; CA, RA, VA.
+- **CA / RA / VA** — CA issues certificates; RA verifies identity and processes requests; VA validates certificates via OCSP.
+- **Key escrow** — private key stored (split in two halves) with a trusted third party for authorized recovery.
+- **M-of-N control** — key backup distributed across several people/devices; separation of duties.
+- **Symmetric vs asymmetric** — one shared key (fast, bulk) vs public/private pair (slower, non-repudiation); k = n(n-1)/2 shared keys.
+- **RSA / ElGamal / ECC / Diffie-Hellman** — asymmetric algorithms; DH is key exchange only (table); ECC small keys, low power.
+- **DES / 3DES / AES / Blowfish / Twofish / IDEA / RC4** — symmetric ciphers; AES 128/192/256, 128-bit block.
+- **Block vs stream cipher** — fixed-size blocks vs one bit at a time.
+- **One-time pad / XOR** — unbreakable if key is random, as long as the message, and never reused.
+- **TPM / HSM / secure enclave** — motherboard crypto chip / key-storage-and-acceleration device / CPU-protected memory.
+- **FDE / SED / EFS / PGP / GPG** — full-disk, self-encrypting drive, Windows file encryption, email/file encryption.
+- **Perfect forward secrecy / DHE** — session keys survive later compromise of the server private key; ephemeral DH.
+- **Steganography / tokenization / data masking** — hide data in another medium / replace with vault-stored token / irreversible redaction.
+- **Hashing / HMAC / MD5 / SHA-1 / SHA-2** — one-way fixed-length digest for integrity; MD5 128-bit, SHA-1 160-bit.
+- **Salt / key stretching (PBKDF2, bcrypt)** — random value added before hashing / extra rounds to resist brute force.
+- **Digital signature** — sender signs a hash with own private key; receiver verifies with sender's public key.
+- **Blockchain / open public ledger** — decentralized, cryptographically secured transaction record.
+- **X.509 certificate** — binds identity to public key; signed by CA.
+- **CRL / OCSP / OCSP stapling** — revoked-serial list / real-time status lookup / server-supplied time-stamped response.
+- **Root of trust / root certificate** — self-signed CA certificate that anchors trust.
+- **CSR** — Base64 request to a CA containing subject details and public key.
+- **Wildcard / SAN / EV certificate** — domain + subdomains / multiple host names / extended business verification.
+- **PKCS #7 / #12, DER / PEM / CER / PFX** — certificate import-export and file formats (.p7b; .pfx/.p12).

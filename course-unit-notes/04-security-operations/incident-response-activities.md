@@ -241,3 +241,22 @@ flagged here for awareness, not claimed as 4.9 coverage.)
   framings are defensible from this course's own material and should be
   cross-checked against an external source (e.g., Professor Messer) before
   being treated as settled.
+
+## Official-objective gap check (4.8 bullets as listed on the Section Topics slide, Pt6 p.24)
+
+Recorded 2026-10-16 as a retroactive check against this validated note (slide content was not re-rendered for this check; citations are the ones already in the note).
+
+| Official bullet | Result | Where |
+|---|---|---|
+| Process: Preparation | Covered | Pt6 p.26 |
+| Process: Detection, Analysis | Weak | Slides use a single "Identification" phase (Pt6 p.30: information criticality, business decision); no separate Detection or Analysis slide |
+| Process: Containment, Eradication, Recovery | Covered | Pt6 p.37-39 |
+| Process: Lessons learned | Covered | Pt6 p.40 |
+| Training | Covered | Pt6 p.41 |
+| Testing: tabletop exercise, simulation | Weak | Named only, with walkthrough, in one line (Pt6 p.41); not defined or contrasted |
+| Root cause analysis | Covered | Pt6 p.42 |
+| Threat hunting | Covered | Pt6 p.43 |
+| Digital forensics: legal hold, acquisition, reporting, preservation, e-discovery | Covered | Pt6 p.44 |
+| Digital forensics: chain of custody | Covered | Pt6 p.49 |
+
+Overall: **Weakly Covered** (Detection/Analysis not split; testing types are one-liners). The 6- vs 7-phase framing note above is general knowledge, not slide content.

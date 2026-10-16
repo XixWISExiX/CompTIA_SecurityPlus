@@ -4,7 +4,7 @@ One row per source slide page across all 659 pages of `CompTIA_SecurityPlus_Slid
 
 - OCR pass completed for **659 / 659** pages as of this session (bulk `tesseract` pass, run in background; see `OCR_Topic_Guess`).
 - `Domain_Guess` is derived from exact-text matches of each domain's "Domain Topics N.0 (domain name)" divider slide in the OCR output (confirmed by reading the full OCR text at each divider, not just a heuristic guess) — see zone table below. All five domain boundaries are High confidence. This is still page-range-level, not sub-objective-level, except where a unit has been individually extracted (see below).
-- Twelve units have been extracted and validated so far (Domain 4: 4.1-4.9; Domain 2: 2.1-2.3) — see the Resume state and `objective_mapping.md` for statuses and note links.
+- Twenty-eight units have been extracted and validated so far (Domain 4: 4.1-4.9; Domain 2: 2.1-2.5; Domain 5: 5.1-5.6; Domain 3: 3.1-3.4; Domain 1: 1.1-1.4) — see the Resume state and `objective_mapping.md` for statuses and note links.
 
 ## Resume state (update every session)
 
@@ -12,10 +12,10 @@ One row per source slide page across all 659 pages of `CompTIA_SecurityPlus_Slid
 |---|---|
 | Order | Domain 4 → 2 → 5 → 3 → 1 (exam weight), one sub-objective per batch |
 | Boundary rule | A section starts at its roadmap slide (the slide before "Section Topics") and ends before the next roadmap slide. 4.7 = g515-522, 4.8 = g523-549 (no overlap) |
-| Done | 4.8 (g523-549): extracted + validated (official-bullet gap check still to record). 4.1 (g388-422): extracted + validated; Weakly Covered (official-bullet gaps). 4.2 (g423-429): extracted + validated; Well Covered. 4.3 (g430-445): extracted + validated; Weakly Covered (1 bullet gap: system/process audit). 4.4 (g446-456): extracted + validated; Well Covered. 4.5 (g457-484): extracted + validated; Weakly Covered (1 weak bullet: transport method). 4.6 (g485-514): extracted + validated; Weakly Covered (1 weak bullet: passwordless). 4.7 (g515-522): extracted + validated; Well Covered. 4.9 (g550-555): extracted + validated; Weakly Covered (OS-specific logs thin). 5.1 (g561-585 = Pt6 p.61-85): extracted + validated 2026-10-16; Weakly Covered (external-consideration laws are names only; baseline and due care undefined). 5.2 (g586-605 = Pt6 p.86-100 + Pt7 p.1-5): extracted + validated 2026-10-16; Weakly Covered ("probability" never defined separately). 5.3 (g606-614 = Pt7 p.6-14): extracted + validated 2026-10-16; Covered on all Section Topics bullets (MOA/MOU share one definition; supply chain analysis descriptive only). g556-560 are Domain 4 recap / logo / Module 5 title slides (read, no objective content). **Domain 4 extraction is complete (4.1-4.9).** Domain 2: 2.1 (g126-132): extracted + validated; Weakly Covered (motivations list-only). 2.2 (g133-150): extracted + validated; Weakly Covered (non-human vectors list-only; "attack surface" not defined). 2.3 (g151-179): extracted + validated; Weakly Covered (firmware, legacy, cloud-specific thin). 2.4 (g180-230 = Pt2 p.80-100 + Pt3 p.1-30): extracted + validated; Weakly Covered (forgery absent; credential replay, resource consumption thin). 2.5 (g231-245 = Pt3 p.31-45): extracted + validated; Weakly Covered (permissions absent; app allow list, config enforcement, host firewall/HIPS, default passwords thin). g246-247 are the Domain 2 recap / logo (viewed, no unit). **Domain 2 extraction is complete (2.1-2.5).** g125 is the Domain 2 "Domain Topics" recap slide (titles only; not marked, no unit). |
-| In progress | none — 5.3 complete; 5.4 next |
-| Next | 5.4 Effective security compliance (roadmap g615 = Pt7 p.15 viewed; content starts g616 = Pt7 p.16; end TBD at 5.5 roadmap g629) |
-| Then | Domain 3 (g251-385), Domain 1 (g17-123); Domain 2 is complete — boundaries provisional, confirm visually |
+| Done | 4.8 (g523-549): extracted + validated; Weakly Covered (gap check recorded 2026-10-16: Detection/Analysis not split, testing types one-liners). 4.1 (g388-422): extracted + validated; Weakly Covered (official-bullet gaps). 4.2 (g423-429): extracted + validated; Well Covered. 4.3 (g430-445): extracted + validated; Weakly Covered (1 bullet gap: system/process audit). 4.4 (g446-456): extracted + validated; Well Covered. 4.5 (g457-484): extracted + validated; Weakly Covered (1 weak bullet: transport method). 4.6 (g485-514): extracted + validated; Weakly Covered (1 weak bullet: passwordless). 4.7 (g515-522): extracted + validated; Well Covered. 4.9 (g550-555): extracted + validated; Weakly Covered (OS-specific logs thin). 5.1 (g561-585 = Pt6 p.61-85): extracted + validated 2026-10-16; Weakly Covered (external-consideration laws are names only; baseline and due care undefined). 5.2 (g586-605 = Pt6 p.86-100 + Pt7 p.1-5): extracted + validated 2026-10-16; Weakly Covered ("probability" never defined separately). 5.3 (g606-614 = Pt7 p.6-14): extracted + validated 2026-10-16; Covered on all Section Topics bullets (MOA/MOU share one definition; supply chain analysis descriptive only). 5.4 (g616-628 = Pt7 p.16-28): extracted + validated 2026-10-16; Weakly Covered (loss of license = software licensing only; local/national/global legal implications not itemized). 5.5 (g629-646 = Pt7 p.29-46): extracted + validated 2026-10-16; Weakly Covered (pen-test "defensive" and "integrated" are one-sentence definitions only). 5.6 (g647-656 = Pt7 p.47-56): extracted + validated 2026-10-16; Weakly Covered (recognizing a phishing attempt and responding to reported messages are named but not itemized). g657 = Pt7 p.57 Domain 5 recap (viewed, no unit); g658-659 blank/logo. **Domain 5 extraction is complete (5.1-5.6).** Domain 3: 3.1 (g251-300 = Pt3 p.51-100): extracted + validated 2026-10-16; Weakly Covered (on-premises, hybrid considerations, third-party vendors, logical segmentation thin; considerations list is one-liners; OSI/IP/TCP networking primer sits inside the range). 3.2 (g301-339 = Pt4 p.1-39): extracted + validated 2026-10-16; Weakly Covered (Connectivity absent; security zones, jump server, sensors, NGFW, TLS tunneling, SASE components, active/passive and inline/tap thin). 3.3 (g340-349 = Pt4 p.40-49): extracted + validated 2026-10-16; Weakly Covered (geolocation and 5 of 8 methods are one-line definitions). 3.4 (g350-382 = Pt4 p.50-82): extracted + validated 2026-10-16; Weakly Covered (snapshots and recovery thin; RTO/RPO absent). g383 = Pt4 p.83 Domain 3 recap, g384-385 logo slides, g386 = Module 4 title (viewed, no unit). g250 = Domain 3 "Domain Topics" recap (viewed, no unit). Pt4 p.1 (g301) is the 3.2 roadmap. g556-560 are Domain 4 recap / logo / Module 5 title slides (read, no objective content). **Domain 4 extraction is complete (4.1-4.9).** Domain 2: 2.1 (g126-132): extracted + validated; Weakly Covered (motivations list-only). 2.2 (g133-150): extracted + validated; Weakly Covered (non-human vectors list-only; "attack surface" not defined). 2.3 (g151-179): extracted + validated; Weakly Covered (firmware, legacy, cloud-specific thin). 2.4 (g180-230 = Pt2 p.80-100 + Pt3 p.1-30): extracted + validated; Weakly Covered (forgery absent; credential replay, resource consumption thin). 2.5 (g231-245 = Pt3 p.31-45): extracted + validated; Weakly Covered (permissions absent; app allow list, config enforcement, host firewall/HIPS, default passwords thin). g246-247 are the Domain 2 recap / logo (viewed, no unit). **Domain 2 extraction is complete (2.1-2.5).** g125 is the Domain 2 "Domain Topics" recap slide (titles only; not marked, no unit). |
+| In progress | none — 1.4 (g60-120 = Pt1 p.60 - Pt2 p.20): extracted + validated 2026-10-16; Weakly Covered (encryption levels beyond FDE/file/SED, key exchange, key management system, self-signed vs third-party thin). g121 = Pt2 p.21 Domain 1 recap, g122-123 logo slides, g124 = Module 2 title (viewed, no unit). **Domain 1 extraction is complete (1.1-1.4); all five domains extracted.** Earlier: 1.1 (g17-20 = Pt1 p.17-20) extracted + validated 2026-10-16; Well Covered. 1.2 (g21-51 = Pt1 p.21-51): extracted + validated 2026-10-16; Weakly Covered ("Authenticating people", "Authenticating systems" and "Authorization models" are Section Topics with no dedicated slides; honeypot-family and sinkhole definition-level only). g52 = 1.3 roadmap. 1.3 (g52-59 = Pt1 p.52-59): extracted + validated 2026-10-16; Well Covered (all 18 Section Topics bullets present; restricted activities and restarts brief; version control bullets unexplained). g52-53 roadmap/Section Topics confirmed at 80 dpi only. |
+| Next | All 28 units extracted + validated. Next: practice batches (10-15 Qs) on validated units, oldest/highest-weight first; ask which bootcamp topic is current |
+| Then | Spaced-repetition and exam-readiness reviews per prompts 02-06 |
 | Do not run | `.render_cache/build_tracker.py` — it regenerates the whole tracker and would erase per-page flags |
 
 ## Domain zone basis (OCR divider-slide evidence)
@@ -48,114 +48,114 @@ One row per source slide page across all 659 pages of `CompTIA_SecurityPlus_Slid
 | 1 | 13 | 13 | _(blank/unreadable)_ | 0.0 Course overview/logistics (non-exam-objective content) | High | N | N | N |  |
 | 1 | 14 | 14 | SS RULART All | 0.0 Course overview/logistics (non-exam-objective content) | High | N | N | N |  |
 | 1 | 15 | 15 | General Security Concepts | 0.0 Course overview/logistics (non-exam-objective content) | High | Y | N | N |  |
-| 1 | 16 | 16 | — 1.3 Explain the importance of change management processes and the im | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 17 | 17 | Fundamental security concepts | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 18 | 18 | 1.1 Compare and contrast various types of security controls. | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 19 | 19 | * Managerial (Administrative) — Implemented by creating and following  | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 20 | 20 | - Detective — Send a warning after discovering unwanted activities dur | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 21 | 21 | Fundamental security concepts | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 22 | 22 | — Authentication, Authorization, and Accounting (AAA) + Access control | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 23 | 23 | Confidentiality, Integrity, And Availability (CIA) | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 24 | 24 | ¢ Discretion — An operator's act or decision to control disclosure to  | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 25 | 25 | — Integrity makes sure information alteration should not occur while t | 1.0 General Security Concepts | High | Y | N | N |  |
-| 1 | 26 | 26 | * Accessibility - Assurance that the widest range of subjects can inte | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 27 | 27 | — Mutual Authentication — the client and server verify the authenticit | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 28 | 28 | rna me be granted the minimum amount of | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 29 | 29 | — International Standards Organization (ISO) published | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 30 | 30 | + Kerberos — A client-server-based authentication system that uses “ti | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 31 | 31 | 1. Kerberos Principal Alice contacts to the KDC Kerberos kpc | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 32 | 32 | — Conducted to understand the status of your cybersecurity risks and | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 33 | 33 | validating security configuration and posture, before being granted or | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 34 | 34 | - Adaptive identity — User identities are not static, and that identit | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 35 | 35 | ‘CDM System Policy Policy | 1.0 General Security Concepts | High | Y | N | N |  |
-| 1 | 36 | 36 | * Control Plane — Responsible for managing network routing protocols,  | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 37 | 37 | * Policy Decision Point (PDP) — Responsible for making access control  | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 38 | 38 | * Transfers/forwards packets across the network based on the direction | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 39 | 39 | ¢ Atraffic bollard is a strong post designed to stop == | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 40 | 40 | (only one opens at a time) to prevent unauthorized people from followi | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 41 | 41 | facility without the appropriate access credentials, without 7 (ee } | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 42 | 42 | — Used to separate security zones, provide safe areas, and maintain tr | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 43 | 43 | —Normal light spectrum require sufficient visibility to illuminate ea | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 44 | 44 | — One of the best security mechanisms to monitor a facility's grounds | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 45 | 45 | + Proximity Readers — method of controlling access through Key card | 1.0 General Security Concepts | High | Y | N | N |  |
-| 1 | 46 | 46 | —Poor lighting can lead to individuals sneaking in through doors, allo | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 47 | 47 | * Motion Detection — Used to detect the motion of a living being withi | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 48 | 48 | that cold aisles are used for air intake, and hot aisle are used for a | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 49 | 49 | mixes quickly with the air in the room to extinguish a fire; Banned in | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 50 | 50 | « High-security models are resistant to lock picking, drilling or bypa | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 51 | 51 | — Records and files are fake, and legitimate users never have access t | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 52 | 52 | Change management processes | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 53 | 53 | 1.3 Explain the importance of change management processes and the impa | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 54 | 54 | * Outlines the details of the proposed change, including its purpose,  | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 55 | 55 | + Impact Analysis — The process of identifying and assessing the poten | 1.0 General Security Concepts | High | Y | N | N |  |
-| 1 | 56 | 56 | + Allow and block lists describe software restriction approaches desig | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 57 | 57 | * Restricted activities — Actions or changes that require additional s | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 58 | 58 | — Change Requests should be reviewed and updated to reflect the detail | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 59 | 59 | ¢ Version Control — An ID system for each iteration of a software prod | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 60 | 60 | Fundamental security concepts | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 61 | 61 | + Private key + Hardware security module (HSM) * Certificate revocatio | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 62 | 62 | - Public Key Infrastructure (PKI) Ceireacerastntcy @vl | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 63 | 63 | —CAis at the top of the system, and performs the following functions:  | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 64 | 64 | —Local Registration Authorities could be used by systems to off-load r | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 65 | 65 | * Online Certificate Status Protocol (OCSP) — a “request-response prot | 1.0 General Security Concepts | High | Y | N | N |  |
-| 1 | 66 | 66 | * Key — mathematical value entered into a cryptographic algorithm to p | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 67 | 67 | ¢ Key Escrow -— The storing of private keys so that the key can be obt | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 68 | 68 | — Cryptography is a critical element in protecting the Confidentiality | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 69 | 69 | + Cleartext — readable (unencrypted) data that is transmitted or store | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 70 | 70 | + Initialization Vector (IV) — used in some symmetric ciphers to ensur | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 71 | 71 | ¢ Substitution Cipher — substitutes one character for another | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 72 | 72 | * Vigenere — uses multiple alphabets to help combat against japabponun | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 73 | 73 | * Basic Input/Output System (BIOS) — an older method for handling boot | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 74 | 74 | Client Fokenibased Operating System i  Ay | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 75 | 75 | ¢ Hard Drive Security — both permanent and portable hard drives should | 1.0 General Security Concepts | High | Y | N | N |  |
-| 1 | 76 | 76 | — Data/Media Encryption Key (DEK/MEK) — the key used to encrypt the da | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 77 | 77 | ¢ File and File System Encryption — encryption software can be used to | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 78 | 78 | — Internet Protocol Security (IPsec) — securing traffic sent between t | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 79 | 79 | + When the value of a qubit is read, it collapses to either 1 or 0, an | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 80 | 80 | + Uses a “public key” to encrypt a message, and a “private key” to dec | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 81 | 81 | El-Gamal Yes Yes Yes Does not use prime number factoring but | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 82 | 82 | * RSA Algorithm — Named for its inventors Ron Rivest, Adi Shamir, Leon | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 83 | 83 | ¢ ElGamal — A public key algorithm that can be used for digital signat | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 84 | 84 | —Leverages one-way function that is based on the idea of using truly r | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 85 | 85 | —Allows 2 parties that have no prior knowledge of each other to jointl | 1.0 General Security Concepts | High | Y | N | N |  |
-| 1 | 86 | 86 | - A“shared key” is used by both the sender and receiver to encrypt and | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 87 | 87 | 3DES 56, 112, or 168 Block (64 bit) Effective strength is 112 bits | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 88 | 88 | —Commornly use substitution or transposition ciphers | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 89 | 89 | ¢ Data Encryption Standard (DES) — Based on a 56-bit cipher key and 8- | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 90 | 90 | versions of block cipher keys: 128, 192, 256 each with the same cipher | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 91 | 91 | key and is similar in speed and capability to DES, but has more securi | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 92 | 92 | * Contains several vulnerabilities and therefore avoided for newer app | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 93 | 93 | ¢ Blowfish — Block cipher with a 64-bit block size with a key size ran | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 94 | 94 | — Data is encrypted using modular addition (y+c=b) or XOR with shared  | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 95 | 95 | ¢ Shared keys present a vulnerability when they are transmitted across | 1.0 General Security Concepts | High | Y | N | N |  |
-| 1 | 96 | 96 | ¢ Key size — the security of a cipher is strongly related to the size  | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 97 | 97 | —Trusted Platform Module (TPM) — A microchip or a co-processor on a co | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 98 | 98 | ¢ Key Generation — Creates an asymmetric key pair or symmetric secret  | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 99 | 99 | « An account or combination of accounts that can copy a cryptographic  | 1.0 General Security Concepts | High | N | N | N |  |
-| 1 | 100 | 100 | —Most common files used are pictures, but can be done with audio and v | 1.0 General Security Concepts | High | N | N | N |  |
-| 2 | 1 | 101 | — Techniques to preserve the original format of the field | 1.0 General Security Concepts | High | N | N | N |  |
-| 2 | 2 | 102 | * Hashing — a ONE-WAY mathematical function that produces a fixed leng | 1.0 General Security Concepts | High | N | N | N |  |
-| 2 | 3 | 103 | —Version 5 (MD5) — a generic version of several algorithms used to has | 1.0 General Security Concepts | High | N | N | N |  |
-| 2 | 4 | 104 | ¢ Secure Hash Algorithm (SHA) — designed by the National Security Agen | 1.0 General Security Concepts | High | N | N | N |  |
-| 2 | 5 | 105 | * NTLM — uses MD4 and MD5 hashing algorithms, and is primarily | 1.0 General Security Concepts | High | Y | N | N |  |
-| 2 | 6 | 106 | —Also ensures unique password hashes are stored, F — | 1.0 General Security Concepts | High | N | N | N |  |
-| 2 | 7 | 107 | — Digital Signature Algorithm (DSA) and FIPS 186-2 are used in the gen | 1.0 General Security Concepts | High | N | N | N |  |
-| 2 | 8 | 108 | ¢ Key Stretching — a process of protecting weak keys from brute-forcin | 1.0 General Security Concepts | High | N | N | N |  |
-| 2 | 9 | 109 | expanding list of transactional records record of transactions that un | 1.0 General Security Concepts | High | N | N | N |  |
-| 2 | 10 | 110 | to associate a user’s identity to a public key that has been “digitall | 1.0 General Security Concepts | High | N | N | N |  |
-| 2 | 11 | 111 | — Third-party trust — two individuals trust each other because each tr | 1.0 General Security Concepts | High | N | N | N |  |
-| 2 | 12 | 112 | —A tiered system of CAs, Root CA signs all digital certificates with a | 1.0 General Security Concepts | High | N | N | N |  |
-| 2 | 13 | 113 | * Certificate Revocation List (CRL) — CAs maintain an online CRL | 1.0 General Security Concepts | High | N | N | N |  |
-| 2 | 14 | 114 | * OCSP Stapling — variation of OCSP that attempts to reduce traffic by | 1.0 General Security Concepts | High | N | N | N |  |
-| 2 | 15 | 115 | —PKCS #7 — typically used to import and export certificates and privat | 1.0 General Security Concepts | High | Y | N | N |  |
-| 2 | 16 | 116 | techniques to provide confidentiality, sender authentication, and mess | 1.0 General Security Concepts | High | N | N | N |  |
-| 2 | 17 | 117 | + Root Digital Certificate — generated and self-signed by the Root CA  | 1.0 General Security Concepts | High | N | N | N |  |
-| 2 | 18 | 118 | ¢ Root of Trust (RoT) — Defines how users and different CAs can trust  | 1.0 General Security Concepts | High | N | N | N |  |
-| 2 | 19 | 119 | Common name Fully qualified domain name (FQDN) of the server www.abcco | 1.0 General Security Concepts | High | N | N | N |  |
-| 2 | 20 | 120 | * Subject Alternative Name (SAN) Digital Certificate — Allows the addi | 1.0 General Security Concepts | High | N | N | N |  |
-| 2 | 21 | 121 | — 1.3 Explain the importance of change management processes and the im | 1.0 General Security Concepts | High | N | N | N |  |
-| 2 | 22 | 122 | _(blank/unreadable)_ | 1.0 General Security Concepts | High | N | N | N |  |
-| 2 | 23 | 123 | SS RULART All | 1.0 General Security Concepts | High | N | N | N |  |
+| 1 | 16 | 16 | — 1.3 Explain the importance of change management processes and the im | 1.0 General Security Concepts | High | Y | N | N |  |
+| 1 | 17 | 17 | Fundamental security concepts | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/types-of-security-controls.md |
+| 1 | 18 | 18 | 1.1 Compare and contrast various types of security controls. | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/types-of-security-controls.md |
+| 1 | 19 | 19 | * Managerial (Administrative) — Implemented by creating and following | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/types-of-security-controls.md |
+| 1 | 20 | 20 | - Detective — Send a warning after discovering unwanted activities dur | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/types-of-security-controls.md |
+| 1 | 21 | 21 | Fundamental security concepts | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/fundamental-security-concepts.md |
+| 1 | 22 | 22 | — Authentication, Authorization, and Accounting (AAA) + Access control | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/fundamental-security-concepts.md |
+| 1 | 23 | 23 | Confidentiality, Integrity, And Availability (CIA) | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/fundamental-security-concepts.md |
+| 1 | 24 | 24 | ¢ Discretion — An operator's act or decision to control disclosure to | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/fundamental-security-concepts.md |
+| 1 | 25 | 25 | — Integrity makes sure information alteration should not occur while t | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/fundamental-security-concepts.md |
+| 1 | 26 | 26 | * Accessibility - Assurance that the widest range of subjects can inte | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/fundamental-security-concepts.md |
+| 1 | 27 | 27 | — Mutual Authentication — the client and server verify the authenticit | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/fundamental-security-concepts.md |
+| 1 | 28 | 28 | rna me be granted the minimum amount of | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/fundamental-security-concepts.md |
+| 1 | 29 | 29 | — International Standards Organization (ISO) published | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/fundamental-security-concepts.md |
+| 1 | 30 | 30 | + Kerberos — A client-server-based authentication system that uses “ti | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/fundamental-security-concepts.md |
+| 1 | 31 | 31 | 1. Kerberos Principal Alice contacts to the KDC Kerberos kpc | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/fundamental-security-concepts.md |
+| 1 | 32 | 32 | — Conducted to understand the status of your cybersecurity risks and | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/fundamental-security-concepts.md |
+| 1 | 33 | 33 | validating security configuration and posture, before being granted or | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/fundamental-security-concepts.md |
+| 1 | 34 | 34 | - Adaptive identity — User identities are not static, and that identit | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/fundamental-security-concepts.md |
+| 1 | 35 | 35 | ‘CDM System Policy Policy | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/fundamental-security-concepts.md |
+| 1 | 36 | 36 | * Control Plane — Responsible for managing network routing protocols, | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/fundamental-security-concepts.md |
+| 1 | 37 | 37 | * Policy Decision Point (PDP) — Responsible for making access control | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/fundamental-security-concepts.md |
+| 1 | 38 | 38 | * Transfers/forwards packets across the network based on the direction | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/fundamental-security-concepts.md |
+| 1 | 39 | 39 | ¢ Atraffic bollard is a strong post designed to stop == | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/fundamental-security-concepts.md |
+| 1 | 40 | 40 | (only one opens at a time) to prevent unauthorized people from followi | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/fundamental-security-concepts.md |
+| 1 | 41 | 41 | facility without the appropriate access credentials, without 7 (ee } | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/fundamental-security-concepts.md |
+| 1 | 42 | 42 | — Used to separate security zones, provide safe areas, and maintain tr | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/fundamental-security-concepts.md |
+| 1 | 43 | 43 | —Normal light spectrum require sufficient visibility to illuminate ea | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/fundamental-security-concepts.md |
+| 1 | 44 | 44 | — One of the best security mechanisms to monitor a facility's grounds | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/fundamental-security-concepts.md |
+| 1 | 45 | 45 | + Proximity Readers — method of controlling access through Key card | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/fundamental-security-concepts.md |
+| 1 | 46 | 46 | —Poor lighting can lead to individuals sneaking in through doors, allo | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/fundamental-security-concepts.md |
+| 1 | 47 | 47 | * Motion Detection — Used to detect the motion of a living being withi | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/fundamental-security-concepts.md |
+| 1 | 48 | 48 | that cold aisles are used for air intake, and hot aisle are used for a | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/fundamental-security-concepts.md |
+| 1 | 49 | 49 | mixes quickly with the air in the room to extinguish a fire; Banned in | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/fundamental-security-concepts.md |
+| 1 | 50 | 50 | « High-security models are resistant to lock picking, drilling or bypa | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/fundamental-security-concepts.md |
+| 1 | 51 | 51 | — Records and files are fake, and legitimate users never have access t | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/fundamental-security-concepts.md |
+| 1 | 52 | 52 | Change management processes | 1.0 General Security Concepts | High | Y | N | N |  |
+| 1 | 53 | 53 | 1.3 Explain the importance of change management processes and the impa | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/change-management-processes.md |
+| 1 | 54 | 54 | * Outlines the details of the proposed change, including its purpose, | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/change-management-processes.md |
+| 1 | 55 | 55 | + Impact Analysis — The process of identifying and assessing the poten | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/change-management-processes.md |
+| 1 | 56 | 56 | + Allow and block lists describe software restriction approaches desig | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/change-management-processes.md |
+| 1 | 57 | 57 | * Restricted activities — Actions or changes that require additional s | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/change-management-processes.md |
+| 1 | 58 | 58 | — Change Requests should be reviewed and updated to reflect the detail | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/change-management-processes.md |
+| 1 | 59 | 59 | ¢ Version Control — An ID system for each iteration of a software prod | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/change-management-processes.md |
+| 1 | 60 | 60 | Fundamental security concepts | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 61 | 61 | + Private key + Hardware security module (HSM) * Certificate revocatio | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 62 | 62 | - Public Key Infrastructure (PKI) Ceireacerastntcy @vl | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 63 | 63 | —CAis at the top of the system, and performs the following functions:  | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 64 | 64 | —Local Registration Authorities could be used by systems to off-load r | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 65 | 65 | * Online Certificate Status Protocol (OCSP) — a “request-response prot | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 66 | 66 | * Key — mathematical value entered into a cryptographic algorithm to p | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 67 | 67 | ¢ Key Escrow -— The storing of private keys so that the key can be obt | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 68 | 68 | — Cryptography is a critical element in protecting the Confidentiality | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 69 | 69 | + Cleartext — readable (unencrypted) data that is transmitted or store | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 70 | 70 | + Initialization Vector (IV) — used in some symmetric ciphers to ensur | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 71 | 71 | ¢ Substitution Cipher — substitutes one character for another | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 72 | 72 | * Vigenere — uses multiple alphabets to help combat against japabponun | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 73 | 73 | * Basic Input/Output System (BIOS) — an older method for handling boot | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 74 | 74 | Client Fokenibased Operating System i  Ay | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 75 | 75 | ¢ Hard Drive Security — both permanent and portable hard drives should | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 76 | 76 | — Data/Media Encryption Key (DEK/MEK) — the key used to encrypt the da | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 77 | 77 | ¢ File and File System Encryption — encryption software can be used to | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 78 | 78 | — Internet Protocol Security (IPsec) — securing traffic sent between t | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 79 | 79 | + When the value of a qubit is read, it collapses to either 1 or 0, an | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 80 | 80 | + Uses a “public key” to encrypt a message, and a “private key” to dec | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 81 | 81 | El-Gamal Yes Yes Yes Does not use prime number factoring but | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 82 | 82 | * RSA Algorithm — Named for its inventors Ron Rivest, Adi Shamir, Leon | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 83 | 83 | ¢ ElGamal — A public key algorithm that can be used for digital signat | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 84 | 84 | —Leverages one-way function that is based on the idea of using truly r | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 85 | 85 | —Allows 2 parties that have no prior knowledge of each other to jointl | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 86 | 86 | - A“shared key” is used by both the sender and receiver to encrypt and | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 87 | 87 | 3DES 56, 112, or 168 Block (64 bit) Effective strength is 112 bits | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 88 | 88 | —Commornly use substitution or transposition ciphers | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 89 | 89 | ¢ Data Encryption Standard (DES) — Based on a 56-bit cipher key and 8- | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 90 | 90 | versions of block cipher keys: 128, 192, 256 each with the same cipher | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 91 | 91 | key and is similar in speed and capability to DES, but has more securi | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 92 | 92 | * Contains several vulnerabilities and therefore avoided for newer app | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 93 | 93 | ¢ Blowfish — Block cipher with a 64-bit block size with a key size ran | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 94 | 94 | — Data is encrypted using modular addition (y+c=b) or XOR with shared  | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 95 | 95 | ¢ Shared keys present a vulnerability when they are transmitted across | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 96 | 96 | ¢ Key size — the security of a cipher is strongly related to the size  | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 97 | 97 | —Trusted Platform Module (TPM) — A microchip or a co-processor on a co | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 98 | 98 | ¢ Key Generation — Creates an asymmetric key pair or symmetric secret  | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 99 | 99 | « An account or combination of accounts that can copy a cryptographic  | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 1 | 100 | 100 | —Most common files used are pictures, but can be done with audio and v | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 2 | 1 | 101 | — Techniques to preserve the original format of the field | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 2 | 2 | 102 | * Hashing — a ONE-WAY mathematical function that produces a fixed leng | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 2 | 3 | 103 | —Version 5 (MD5) — a generic version of several algorithms used to has | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 2 | 4 | 104 | ¢ Secure Hash Algorithm (SHA) — designed by the National Security Agen | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 2 | 5 | 105 | * NTLM — uses MD4 and MD5 hashing algorithms, and is primarily | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 2 | 6 | 106 | —Also ensures unique password hashes are stored, F — | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 2 | 7 | 107 | — Digital Signature Algorithm (DSA) and FIPS 186-2 are used in the gen | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 2 | 8 | 108 | ¢ Key Stretching — a process of protecting weak keys from brute-forcin | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 2 | 9 | 109 | expanding list of transactional records record of transactions that un | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 2 | 10 | 110 | to associate a user’s identity to a public key that has been “digitall | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 2 | 11 | 111 | — Third-party trust — two individuals trust each other because each tr | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 2 | 12 | 112 | —A tiered system of CAs, Root CA signs all digital certificates with a | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 2 | 13 | 113 | * Certificate Revocation List (CRL) — CAs maintain an online CRL | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 2 | 14 | 114 | * OCSP Stapling — variation of OCSP that attempts to reduce traffic by | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 2 | 15 | 115 | —PKCS #7 — typically used to import and export certificates and privat | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 2 | 16 | 116 | techniques to provide confidentiality, sender authentication, and mess | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 2 | 17 | 117 | + Root Digital Certificate — generated and self-signed by the Root CA  | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 2 | 18 | 118 | ¢ Root of Trust (RoT) — Defines how users and different CAs can trust  | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 2 | 19 | 119 | Common name Fully qualified domain name (FQDN) of the server www.abcco | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 2 | 20 | 120 | * Subject Alternative Name (SAN) Digital Certificate — Allows the addi | 1.0 General Security Concepts | High | Y | Y | Y | course-unit-notes/01-general-security-concepts/cryptographic-solutions.md |
+| 2 | 21 | 121 | — 1.3 Explain the importance of change management processes and the im | 1.0 General Security Concepts | High | Y | N | N |  |
+| 2 | 22 | 122 | _(blank/unreadable)_ | 1.0 General Security Concepts | High | Y | N | N |  |
+| 2 | 23 | 123 | SS RULART All | 1.0 General Security Concepts | High | Y | N | N |  |
 | 2 | 24 | 124 | Threats, Vulnerabilities, and Mitigations a ! | 1.0 General Security Concepts | High | N | N | N |  |
 | 2 | 25 | 125 | —2.4 Given a scenario, analyze indicators of malicious activity. | 2.0 Threats, Vulnerabilities, and Mitigations | High | Y | N | N |  |
 | 2 | 26 | 126 | Mitigation techniques used to secure | 2.0 Threats, Vulnerabilities, and Mitigations | High | Y | Y | Y | course-unit-notes/02-threats-vulnerabilities-and-mitigations/threat-actors-and-motivations.md |
@@ -282,139 +282,139 @@ One row per source slide page across all 659 pages of `CompTIA_SecurityPlus_Slid
 | 3 | 47 | 247 | _(blank/unreadable)_ | 2.0 Threats, Vulnerabilities, and Mitigations | High | Y | N | N |  |
 | 3 | 48 | 248 | SS RULART All | 2.0 Threats, Vulnerabilities, and Mitigations | High | N | N | N |  |
 | 3 | 49 | 249 | Module 3 —~& Bi | 2.0 Threats, Vulnerabilities, and Mitigations | High | N | N | N |  |
-| 3 | 50 | 250 | —3.2 Given a scenario, apply security principles to secure enterprise  | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 51 | 251 | Security implications of different | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 52 | 252 | — Architecture and infrastructure concepts + Industrial control system | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 53 | 253 | * Cloud Computing — Computing, storage, application and other services | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 54 | 254 | ¢ Responsibility Matrix (Shared Responsibility) — Identifies that resp | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 55 | 255 | (On-Premises) (as a Service) (as a Service) (as a Service) | 3.0 Security Architecture | High | Y | N | N |  |
-| 3 | 56 | 256 | —Multi-Cloud — Architectures are where an organization uses services f | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 57 | 257 | or for more specific or product-focused projects (pen testing, SIEM ro | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 58 | 258 | up and delivering secure cloud platforms for evaluating and selecting  | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 59 | 259 | — Provides security, manageability, and visibility into how clients Pa | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 60 | 260 | * Serverless — a software architecture that runs functions within virt | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 61 | 261 | — Physically Isolating a host or group of hosts improves security but  | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 62 | 262 | — Control plane — makes decisions about how traffic should be prioriti | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 63 | 263 | —Prioritize data for analysis and alert conditions See | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 64 | 264 | 7 Application Network process to application (FTP, HTTP, and SMTP) | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 65 | 265 | Protocol Data Units (PDUs) | 3.0 Security Architecture | High | Y | N | N |  |
-| 3 | 66 | 266 | 7 Application OHCP, DNS, FTP, TFTP, SSH, LDAP, IMAP, | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 67 | 267 | — Communication protocol for local area networks and the Internet | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 68 | 268 | with four pairs of wires (eight total) each of which is = | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 69 | 269 | — Still used today as the primary standard transmission method for fib | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 70 | 270 | ¢ Electromagnetic Interference (EMI) — Interference on network cables | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 71 | 271 | * Cable Locks — A sturdy cable with either a built-in lock, or eyelet  | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 72 | 272 | * Switch — Intelligent hub; knows the system addresses connected | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 73 | 273 | ¢ Switch — a typical layer 2 device that forwards frames based on hard | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 74 | 274 | + Every Network Interface Card (NIC) has a 6 byte (48 bits) Ethernet a | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 75 | 275 | —MAC Filtering — manually defining which MAC addresses are allowed to  | 3.0 Security Architecture | High | Y | N | N |  |
-| 3 | 76 | 276 | + Flood Guards — manage traffic flows by monitoring traffic rate and p | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 77 | 277 | ¢ Router — connects two or more networks together to form an internetw | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 78 | 278 | * Switches — break up Layer 2 — Switch 2 Broadcast Domains Layer 1 — H | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 79 | 279 | * IPv4 — Uses a 32-bit address notation expressed in dotted-quad (dott | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 80 | 280 | reserved for internal networks and are not routed by Internet (public) | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 81 | 281 | sets of IP addresses (internal & external) for mapping 192.168.1.2 QR | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 82 | 282 | + IPv6 — replacement for IPv4 that uses 128-bit address notation expre | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 83 | 283 | « ARecommendation for IPv6 Address Text Representation | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 84 | 284 | number, which is also used to make sure that the data is delivered to  | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 85 | 285 | field is valid and contains the next sequence number that is expected  | 3.0 Security Architecture | High | Y | N | N |  |
-| 3 | 86 | 286 | ¢ Faster and more efficient for many lightweight or time-sensitive | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 87 | 287 | —All users and devices rely on the central server to access and proces | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 88 | 288 | — Often used in situations where resilience and flexibility are more i | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 89 | 289 | —The virtual OS is often referred to as a virtual desktop environment  | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 90 | 290 | — Thin client — a computer only be powerful enough to display the scre | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 91 | 291 | — Docker - container image is a lightweight, standalone, Bins/ Bins/ B | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 92 | 292 | * Internet of Things (loT) — used to describe a global network of appl | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 93 | 293 | * Enterprise management tools are usually lacking | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 94 | 294 | Industrial Control System (ICS), embedded systems, devices and their c | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 95 | 295 | designed for fairly predictable processing workloads, cost per unit ca | 3.0 Security Architecture | High | Y | N | N |  |
-| 3 | 96 | 296 | are provided on a single processor die (or chip), a type of packaging  | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 97 | 297 | * High Availability (HA) — Decrease the recovery time of a system or n | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 98 | 298 | ¢ Local Replication — Replicates data within a single data center in t | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 99 | 299 | + Availability —- Minimizes downtime or maximizes uptime | 3.0 Security Architecture | High | N | N | N |  |
-| 3 | 100 | 300 | ¢ Aprimary concerns during a disaster or incident is to ensure the org | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 1 | 301 | Security principles to secure | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 2 | 302 | 3.2 Given a scenario, apply security principles to secure enterprise i | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 3 | 303 | ¢ Device Placement — Considerations for positioning security controls  | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 4 | 304 | ¢ Fail Securely —A component, application, or device is configured to  | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 5 | 305 | to a specially configured port on a Cisco switch that receives copies  | 3.0 Security Architecture | High | Y | N | N |  |
-| 4 | 6 | 306 | * Server — a computer system that stores, transfers, archives, and all | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 7 | 307 | — Often used to protect personal information being transferred across  | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 8 | 308 | preventing packets from traversing the firewall, but instead flows the | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 9 | 309 | ¢ Load Balancing — a fault tolerance technique designed to distribute  | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 10 | 310 | — Goal is to identify intrusion attempts, while minimizing . . ‘ | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 11 | 311 | * Host-Based (HIDS/HIPS) — loaded onto an individual system (host / en | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 12 | 312 | ¢ Traffic collector (or sensor) — placed at various locations across t | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 13 | 313 | -Asecurity control that ties physical ports to end-device (client) | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 14 | 314 | - Extensible Authentication Protocol — a framework for negotiating aut | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 15 | 315 | — Principle of least access/privilege — allow only the necessary acces | 3.0 Security Architecture | High | Y | N | N |  |
-| 4 | 16 | 316 | — Application (layer 7) — can inspect the contents of packets at the a | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 17 | 317 | * Appliance Firewall — a stand-alone hardware firewall deployed to mon | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 18 | 318 | ¢ Application Firewall — operates on the Application Layer (Layer 7) t | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 19 | 319 | —Hypervisor-Based — filtering functionality is built into the hypervis | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 20 | 320 | — Mostly Proprietary — developed from a Linux kernel, but with proprie | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 21 | 321 | — Detects and blocks disclosure of critical data (account numbers, SSN | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 22 | 322 | ¢ Unified Threat Management (UTM)-~ an “all-in-one” device that combin | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 23 | 323 | — Involves the use of modems, traditional Plain Old Telephone Service  | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 24 | 324 | analog voice to digital signals for transmission over the network, and | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 25 | 325 | — Secure Real-time Transport Protocol (SRTP) | 3.0 Security Architecture | High | Y | N | N |  |
-| 4 | 26 | 326 | —VPN Concentrator — the device at which VPN connections terminate with | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 27 | 327 | — Establishes a trust relationship between the gateways and sets up a | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 28 | 328 | —Example: Telecommuter model allowing home-workers and employees worki | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 29 | 329 | connection over a trusted network is detected, using the user's cached | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 30 | 330 | — It provides encapsulation for IP traffic plus IP address assignment  | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 31 | 331 | — For bi-directional protection (two-way traffic) two Security Associa | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 32 | 332 | ¢ Internet Key Exchange (IKE) — protocol handles authentication and ke | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 33 | 333 | « Support for EAP authentication methods, allowing, for example, user  | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 34 | 334 | — Encrypts only the payload of the packet (source and destination IP a | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 35 | 335 | Connects two systems (such as file servers) to each other Used to conn | 3.0 Security Architecture | High | Y | N | N |  |
-| 4 | 36 | 336 | — Simplifies the management and operation of a WAN by decoupling the n | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 37 | 337 | (SWG, CASB, ZTNA, and FWaaS) together with wide area network (WAN) | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 38 | 338 | and placement of security controls to ensure the goals of the CIA tria | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 39 | 339 | - Defense-In-Depth — A security principle by which multiple, differing | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 40 | 340 | Security implications of different | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 41 | 341 | 3.3 Compare and contrast concepts and strategies to protect data. | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 42 | 342 | requirements defined by national and state legislation and/or industry | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 43 | 343 | — Financial activities, performance, and transactions, including finan | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 44 | 344 | — Public information presents no risk to an organization if it is disc | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 45 | 345 | numbers, financial information, and sensitive data like health records | 3.0 Security Architecture | High | Y | N | N |  |
-| 4 | 46 | 346 | * Data in Use: Data being used by an application or resident in memory | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 47 | 347 | — Jurisdiction preventing or restricting processing and storage from t | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 48 | 348 | * Hashing — Converting data into a fixed-length string of characters u | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 49 | 349 | ¢ Data Minimization — Limiting data collection to only what is require | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 50 | 350 | in security architecture | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 51 | 351 | 3.4 Explain the importance of resilience and recovery in security arch | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 52 | 352 | secondary server can take over in the case that the primary one fails, | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 53 | 353 | be considered in order to ensure the organization is able to continue | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 54 | 354 | — Asurviving site includes two geographically dispersed buildings that | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 55 | 355 | ¢ Control Diversity — The layers of controls should combine different  | 3.0 Security Architecture | High | Y | N | N |  |
-| 4 | 56 | 356 | —Also refers to the obfuscation technique to make code difficult for u | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 57 | 357 | —Enhances cybersecurity by diversifying the risk associated with a sin | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 58 | 358 | should deal with both minor and disaster-level disruption by ensuring  | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 59 | 359 | « Evaluating and forecasting the necessary resources in terms of peopl | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 60 | 360 | * Tabletop Exercises — involve teams discussing and working through hy | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 61 | 361 | ¢ Failover Tests — involve intentionally causing the failure of a prim | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 62 | 362 | —Can reveal potential bottlenecks, inefficiencies, or vulnerabilities  | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 63 | 363 | — Ensure their backup systems can handle the same workload as primary | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 64 | 364 | — Short-term — Files that change frequently might need retaining for v | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 65 | 365 | ¢ Onsite Storage — Storing of information (tapes, cartridges, or other | 3.0 Security Architecture | High | Y | N | N |  |
-| 4 | 66 | 366 | * Businesses with relatively stable data or less stringent regulatory | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 67 | 367 | + Ensuring sensitive data remains unreadable without the appropriate d | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 68 | 368 | * Tape — a popular choice for organizations with multi-terabyte storag | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 69 | 369 | — Snapshot/Revert to Known State — a saved system state that can be re | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 70 | 370 | in which there are three or more backup cycles, such as daily, weekly, | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 71 | 371 | — Mirrors a live database allowing simultaneous reads and writes to mu | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 72 | 372 | Data Selection Backup/Restore Time  Archive Attributes | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 73 | 373 | nine CHOMED TOA CraNET FIED Coane FICC craNea FIED | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 74 | 374 | data normally stored on a single disk across a series of disks to prev | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 75 | 375 | Loss of a single disk will result in the loss of all data | 3.0 Security Architecture | High | Y | N | N |  |
-| 4 | 76 | 376 | (Mirrored Disks) _ f one disk fails, the other continues to operate | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 77 | 377 | Dedicated Parity) Should one drive fail, it can be replaced, and the n | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 78 | 378 | FD Stripes data at block level and spreads parit: | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 79 | 379 | (Block-striped with there are two stripes of parity information Yes 4 | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 80 | 380 | (Raid 1+0) Contains two RAID 1 mirrors which are then striped | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 81 | 381 | 0 Block Striping or Spanning Speed —- No Redundancy 17) | 3.0 Security Architecture | High | N | N | N |  |
-| 4 | 82 | 382 | — Managed Power Distribution Units (PDUs) — An advanced strip socket t | 3.0 Security Architecture | High | N | N | N |  |
+| 3 | 50 | 250 | —3.2 Given a scenario, apply security principles to secure enterprise | 3.0 Security Architecture | High | Y | N | N |  |
+| 3 | 51 | 251 | Security implications of different | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 52 | 252 | — Architecture and infrastructure concepts + Industrial control system | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 53 | 253 | * Cloud Computing — Computing, storage, application and other services | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 54 | 254 | ¢ Responsibility Matrix (Shared Responsibility) — Identifies that resp | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 55 | 255 | (On-Premises) (as a Service) (as a Service) (as a Service) | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 56 | 256 | —Multi-Cloud — Architectures are where an organization uses services f | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 57 | 257 | or for more specific or product-focused projects (pen testing, SIEM ro | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 58 | 258 | up and delivering secure cloud platforms for evaluating and selecting | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 59 | 259 | — Provides security, manageability, and visibility into how clients Pa | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 60 | 260 | * Serverless — a software architecture that runs functions within virt | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 61 | 261 | — Physically Isolating a host or group of hosts improves security but | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 62 | 262 | — Control plane — makes decisions about how traffic should be prioriti | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 63 | 263 | —Prioritize data for analysis and alert conditions See | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 64 | 264 | 7 Application Network process to application (FTP, HTTP, and SMTP) | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 65 | 265 | Protocol Data Units (PDUs) | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 66 | 266 | 7 Application OHCP, DNS, FTP, TFTP, SSH, LDAP, IMAP, | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 67 | 267 | — Communication protocol for local area networks and the Internet | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 68 | 268 | with four pairs of wires (eight total) each of which is = | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 69 | 269 | — Still used today as the primary standard transmission method for fib | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 70 | 270 | ¢ Electromagnetic Interference (EMI) — Interference on network cables | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 71 | 271 | * Cable Locks — A sturdy cable with either a built-in lock, or eyelet | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 72 | 272 | * Switch — Intelligent hub; knows the system addresses connected | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 73 | 273 | ¢ Switch — a typical layer 2 device that forwards frames based on hard | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 74 | 274 | + Every Network Interface Card (NIC) has a 6 byte (48 bits) Ethernet a | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 75 | 275 | —MAC Filtering — manually defining which MAC addresses are allowed to | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 76 | 276 | + Flood Guards — manage traffic flows by monitoring traffic rate and p | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 77 | 277 | ¢ Router — connects two or more networks together to form an internetw | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 78 | 278 | * Switches — break up Layer 2 — Switch 2 Broadcast Domains Layer 1 — H | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 79 | 279 | * IPv4 — Uses a 32-bit address notation expressed in dotted-quad (dott | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 80 | 280 | reserved for internal networks and are not routed by Internet (public) | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 81 | 281 | sets of IP addresses (internal & external) for mapping 192.168.1.2 QR | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 82 | 282 | + IPv6 — replacement for IPv4 that uses 128-bit address notation expre | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 83 | 283 | « ARecommendation for IPv6 Address Text Representation | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 84 | 284 | number, which is also used to make sure that the data is delivered to | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 85 | 285 | field is valid and contains the next sequence number that is expected | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 86 | 286 | ¢ Faster and more efficient for many lightweight or time-sensitive | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 87 | 287 | —All users and devices rely on the central server to access and proces | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 88 | 288 | — Often used in situations where resilience and flexibility are more i | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 89 | 289 | —The virtual OS is often referred to as a virtual desktop environment | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 90 | 290 | — Thin client — a computer only be powerful enough to display the scre | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 91 | 291 | — Docker - container image is a lightweight, standalone, Bins/ Bins/ B | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 92 | 292 | * Internet of Things (loT) — used to describe a global network of appl | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 93 | 293 | * Enterprise management tools are usually lacking | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 94 | 294 | Industrial Control System (ICS), embedded systems, devices and their c | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 95 | 295 | designed for fairly predictable processing workloads, cost per unit ca | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 96 | 296 | are provided on a single processor die (or chip), a type of packaging | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 97 | 297 | * High Availability (HA) — Decrease the recovery time of a system or n | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 98 | 298 | ¢ Local Replication — Replicates data within a single data center in t | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 99 | 299 | + Availability —- Minimizes downtime or maximizes uptime | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 3 | 100 | 300 | ¢ Aprimary concerns during a disaster or incident is to ensure the org | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-implications-of-architecture-models.md |
+| 4 | 1 | 301 | Security principles to secure | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 2 | 302 | 3.2 Given a scenario, apply security principles to secure enterprise i | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 3 | 303 | ¢ Device Placement — Considerations for positioning security controls  | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 4 | 304 | ¢ Fail Securely —A component, application, or device is configured to  | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 5 | 305 | to a specially configured port on a Cisco switch that receives copies  | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 6 | 306 | * Server — a computer system that stores, transfers, archives, and all | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 7 | 307 | — Often used to protect personal information being transferred across  | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 8 | 308 | preventing packets from traversing the firewall, but instead flows the | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 9 | 309 | ¢ Load Balancing — a fault tolerance technique designed to distribute  | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 10 | 310 | — Goal is to identify intrusion attempts, while minimizing . . ‘ | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 11 | 311 | * Host-Based (HIDS/HIPS) — loaded onto an individual system (host / en | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 12 | 312 | ¢ Traffic collector (or sensor) — placed at various locations across t | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 13 | 313 | -Asecurity control that ties physical ports to end-device (client) | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 14 | 314 | - Extensible Authentication Protocol — a framework for negotiating aut | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 15 | 315 | — Principle of least access/privilege — allow only the necessary acces | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 16 | 316 | — Application (layer 7) — can inspect the contents of packets at the a | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 17 | 317 | * Appliance Firewall — a stand-alone hardware firewall deployed to mon | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 18 | 318 | ¢ Application Firewall — operates on the Application Layer (Layer 7) t | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 19 | 319 | —Hypervisor-Based — filtering functionality is built into the hypervis | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 20 | 320 | — Mostly Proprietary — developed from a Linux kernel, but with proprie | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 21 | 321 | — Detects and blocks disclosure of critical data (account numbers, SSN | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 22 | 322 | ¢ Unified Threat Management (UTM)-~ an “all-in-one” device that combin | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 23 | 323 | — Involves the use of modems, traditional Plain Old Telephone Service  | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 24 | 324 | analog voice to digital signals for transmission over the network, and | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 25 | 325 | — Secure Real-time Transport Protocol (SRTP) | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 26 | 326 | —VPN Concentrator — the device at which VPN connections terminate with | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 27 | 327 | — Establishes a trust relationship between the gateways and sets up a | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 28 | 328 | —Example: Telecommuter model allowing home-workers and employees worki | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 29 | 329 | connection over a trusted network is detected, using the user's cached | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 30 | 330 | — It provides encapsulation for IP traffic plus IP address assignment  | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 31 | 331 | — For bi-directional protection (two-way traffic) two Security Associa | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 32 | 332 | ¢ Internet Key Exchange (IKE) — protocol handles authentication and ke | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 33 | 333 | « Support for EAP authentication methods, allowing, for example, user  | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 34 | 334 | — Encrypts only the payload of the packet (source and destination IP a | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 35 | 335 | Connects two systems (such as file servers) to each other Used to conn | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 36 | 336 | — Simplifies the management and operation of a WAN by decoupling the n | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 37 | 337 | (SWG, CASB, ZTNA, and FWaaS) together with wide area network (WAN) | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 38 | 338 | and placement of security controls to ensure the goals of the CIA tria | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 39 | 339 | - Defense-In-Depth — A security principle by which multiple, differing | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/security-principles-to-secure-enterprise-infrastructure.md |
+| 4 | 40 | 340 | Security implications of different | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/concepts-and-strategies-to-protect-data.md |
+| 4 | 41 | 341 | 3.3 Compare and contrast concepts and strategies to protect data. | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/concepts-and-strategies-to-protect-data.md |
+| 4 | 42 | 342 | requirements defined by national and state legislation and/or industry | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/concepts-and-strategies-to-protect-data.md |
+| 4 | 43 | 343 | — Financial activities, performance, and transactions, including finan | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/concepts-and-strategies-to-protect-data.md |
+| 4 | 44 | 344 | — Public information presents no risk to an organization if it is disc | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/concepts-and-strategies-to-protect-data.md |
+| 4 | 45 | 345 | numbers, financial information, and sensitive data like health records | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/concepts-and-strategies-to-protect-data.md |
+| 4 | 46 | 346 | * Data in Use: Data being used by an application or resident in memory | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/concepts-and-strategies-to-protect-data.md |
+| 4 | 47 | 347 | — Jurisdiction preventing or restricting processing and storage from t | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/concepts-and-strategies-to-protect-data.md |
+| 4 | 48 | 348 | * Hashing — Converting data into a fixed-length string of characters u | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/concepts-and-strategies-to-protect-data.md |
+| 4 | 49 | 349 | ¢ Data Minimization — Limiting data collection to only what is require | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/concepts-and-strategies-to-protect-data.md |
+| 4 | 50 | 350 | in security architecture | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/resilience-and-recovery-in-security-architecture.md |
+| 4 | 51 | 351 | 3.4 Explain the importance of resilience and recovery in security arch | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/resilience-and-recovery-in-security-architecture.md |
+| 4 | 52 | 352 | secondary server can take over in the case that the primary one fails, | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/resilience-and-recovery-in-security-architecture.md |
+| 4 | 53 | 353 | be considered in order to ensure the organization is able to continue | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/resilience-and-recovery-in-security-architecture.md |
+| 4 | 54 | 354 | — Asurviving site includes two geographically dispersed buildings that | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/resilience-and-recovery-in-security-architecture.md |
+| 4 | 55 | 355 | ¢ Control Diversity — The layers of controls should combine different  | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/resilience-and-recovery-in-security-architecture.md |
+| 4 | 56 | 356 | —Also refers to the obfuscation technique to make code difficult for u | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/resilience-and-recovery-in-security-architecture.md |
+| 4 | 57 | 357 | —Enhances cybersecurity by diversifying the risk associated with a sin | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/resilience-and-recovery-in-security-architecture.md |
+| 4 | 58 | 358 | should deal with both minor and disaster-level disruption by ensuring  | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/resilience-and-recovery-in-security-architecture.md |
+| 4 | 59 | 359 | « Evaluating and forecasting the necessary resources in terms of peopl | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/resilience-and-recovery-in-security-architecture.md |
+| 4 | 60 | 360 | * Tabletop Exercises — involve teams discussing and working through hy | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/resilience-and-recovery-in-security-architecture.md |
+| 4 | 61 | 361 | ¢ Failover Tests — involve intentionally causing the failure of a prim | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/resilience-and-recovery-in-security-architecture.md |
+| 4 | 62 | 362 | —Can reveal potential bottlenecks, inefficiencies, or vulnerabilities  | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/resilience-and-recovery-in-security-architecture.md |
+| 4 | 63 | 363 | — Ensure their backup systems can handle the same workload as primary | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/resilience-and-recovery-in-security-architecture.md |
+| 4 | 64 | 364 | — Short-term — Files that change frequently might need retaining for v | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/resilience-and-recovery-in-security-architecture.md |
+| 4 | 65 | 365 | ¢ Onsite Storage — Storing of information (tapes, cartridges, or other | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/resilience-and-recovery-in-security-architecture.md |
+| 4 | 66 | 366 | * Businesses with relatively stable data or less stringent regulatory | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/resilience-and-recovery-in-security-architecture.md |
+| 4 | 67 | 367 | + Ensuring sensitive data remains unreadable without the appropriate d | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/resilience-and-recovery-in-security-architecture.md |
+| 4 | 68 | 368 | * Tape — a popular choice for organizations with multi-terabyte storag | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/resilience-and-recovery-in-security-architecture.md |
+| 4 | 69 | 369 | — Snapshot/Revert to Known State — a saved system state that can be re | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/resilience-and-recovery-in-security-architecture.md |
+| 4 | 70 | 370 | in which there are three or more backup cycles, such as daily, weekly, | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/resilience-and-recovery-in-security-architecture.md |
+| 4 | 71 | 371 | — Mirrors a live database allowing simultaneous reads and writes to mu | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/resilience-and-recovery-in-security-architecture.md |
+| 4 | 72 | 372 | Data Selection Backup/Restore Time  Archive Attributes | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/resilience-and-recovery-in-security-architecture.md |
+| 4 | 73 | 373 | nine CHOMED TOA CraNET FIED Coane FICC craNea FIED | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/resilience-and-recovery-in-security-architecture.md |
+| 4 | 74 | 374 | data normally stored on a single disk across a series of disks to prev | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/resilience-and-recovery-in-security-architecture.md |
+| 4 | 75 | 375 | Loss of a single disk will result in the loss of all data | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/resilience-and-recovery-in-security-architecture.md |
+| 4 | 76 | 376 | (Mirrored Disks) _ f one disk fails, the other continues to operate | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/resilience-and-recovery-in-security-architecture.md |
+| 4 | 77 | 377 | Dedicated Parity) Should one drive fail, it can be replaced, and the n | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/resilience-and-recovery-in-security-architecture.md |
+| 4 | 78 | 378 | FD Stripes data at block level and spreads parit: | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/resilience-and-recovery-in-security-architecture.md |
+| 4 | 79 | 379 | (Block-striped with there are two stripes of parity information Yes 4 | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/resilience-and-recovery-in-security-architecture.md |
+| 4 | 80 | 380 | (Raid 1+0) Contains two RAID 1 mirrors which are then striped | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/resilience-and-recovery-in-security-architecture.md |
+| 4 | 81 | 381 | 0 Block Striping or Spanning Speed —- No Redundancy 17) | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/resilience-and-recovery-in-security-architecture.md |
+| 4 | 82 | 382 | — Managed Power Distribution Units (PDUs) — An advanced strip socket t | 3.0 Security Architecture | High | Y | Y | Y | course-unit-notes/03-security-architecture/resilience-and-recovery-in-security-architecture.md |
 | 4 | 83 | 383 | —3.2 Given a scenario, apply security principles to secure enterprise  | 3.0 Security Architecture | High | N | N | N |  |
 | 4 | 84 | 384 | _(blank/unreadable)_ | 3.0 Security Architecture | High | N | N | N |  |
 | 4 | 85 | 385 | SS RULART All | 3.0 Security Architecture | High | Y | N | N |  |
@@ -648,47 +648,47 @@ One row per source slide page across all 659 pages of `CompTIA_SecurityPlus_Slid
 | 7 | 13 | 613 | * Questionnaires — Structured means of obtaining consistent informatio | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/third-party-risk-assessment-and-management.md |
 | 7 | 14 | 614 | —A definition of how a pen test will be executed and what constraints  | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/third-party-risk-assessment-and-management.md |
 | 7 | 15 | 615 | Effective security governance | 5.0 Security Program Management and Oversight | High | Y | N | N |  |
-| 7 | 16 | 616 | 5.4 Summarize elements of effective security compliance. | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 17 | 617 | ¢ Internal — Focuses on operational details, and supports internal dec | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 18 | 618 | specification developed by the American Institute of Certified Public  | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 19 | 619 | — Software licensing requirements can result in the revocation of usag | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 20 | 620 | * Termination of Contracts — Clauses allowing termination if the other | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 21 | 621 | * Compliance with legal and regulatory requirements, industry standard | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 22 | 622 | ¢ Due Diligence — Taking reasonable steps to satisfy a legal requireme | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 23 | 623 | — Protecting privacy data carries significant local, national, and glo | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 24 | 624 | and the head of each agency to conduct annual reviews of information s | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 25 | 625 | —GDPR, the emphasis is placed on the rights and protections of the dat | 5.0 Security Program Management and Oversight | High | Y | N | N |  |
-| 7 | 26 | 626 | — Exercise decision-making authority, define the purposes of data proc | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 27 | 627 | — Helps organizations determine appropriate retention periods for diff | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 28 | 628 | —The concept has been discussed and put into practice in several juris | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 29 | 629 | Effective security governance | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 30 | 630 | 5.5 Explain types and purposes of audits and assessments. | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 31 | 631 | —Verifying and validating the accuracy, reliability, and effectiveness | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 32 | 632 | — Evaluate the effectiveness of internal controls, identify noncomplia | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 33 | 633 | * Regulatory authorities or agencies — Perform assessments to ensure c | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 34 | 634 | assess an organization’s overall performance, practices, capabilities, | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 35 | 635 | — External Audit — Carried out by a vendor or contractor that is engag | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 36 | 636 | * Verify a threat exists — use surveillance, social engineering, netwo | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 37 | 637 | — Involves simulating real-world attack scenarios to identify vulnerab | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 38 | 638 | — External — Conducted against the Internet facing hosts of a client's | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 39 | 639 | ¢ Blue Team — Performs the defensive role by operating monitoring and  | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 40 | 640 | + Focuses on secure coding practices and building systems with securit | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 41 | 641 | without directly interacting with them by focusing on collecting publi | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 42 | 642 | — Traffic or data is sent to the computers, servers, or devices to sol | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 43 | 643 | — Allow information/system security professionals to see what devices  | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 44 | 644 | them, this technique is often used by attackers to determine potential | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 45 | 645 | « Network Sniffi ng — The process Tis E6t Vew Go Coptire Anais Satstes | 5.0 Security Program Management and Oversight | High | Y | N | N |  |
-| 7 | 46 | 646 | — Detecting network intrusions and undesirable traffic, botnets, troja | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 47 | 647 | Effective security governance | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 48 | 648 | — Phishing — User guidance and training — Reporting and monitoring | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 49 | 649 | — Raises awareness and educates employees about the risks and conseque | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 50 | 650 | — Unusual network traffic, user account activity anomalies, insider th | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 51 | 651 | and confidentiality and emphasize the importance of adhering to these  | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 52 | 652 | — Guides users on the risks associated with malicious charging cables  | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 53 | 653 | * Content development focuses on creating engaging and informative | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 54 | 654 | — Simulations — Recreating system interfaces or using emulators so par | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 55 | 655 | * Successfully executing security training means effectively providing | 5.0 Security Program Management and Oversight | High | Y | N | N |  |
-| 7 | 56 | 656 | + Measures the knowledge gained, awareness raised, and behavioral chan | 5.0 Security Program Management and Oversight | High | N | N | N |  |
-| 7 | 57 | 657 | —5.3 Explain the processes associated with third-party risk assessment | 5.0 Security Program Management and Oversight | High | N | N | N |  |
+| 7 | 16 | 616 | 5.4 Summarize elements of effective security compliance. | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/effective-security-compliance.md |
+| 7 | 17 | 617 | ¢ Internal — Focuses on operational details, and supports internal dec | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/effective-security-compliance.md |
+| 7 | 18 | 618 | specification developed by the American Institute of Certified Public  | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/effective-security-compliance.md |
+| 7 | 19 | 619 | — Software licensing requirements can result in the revocation of usag | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/effective-security-compliance.md |
+| 7 | 20 | 620 | * Termination of Contracts — Clauses allowing termination if the other | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/effective-security-compliance.md |
+| 7 | 21 | 621 | * Compliance with legal and regulatory requirements, industry standard | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/effective-security-compliance.md |
+| 7 | 22 | 622 | ¢ Due Diligence — Taking reasonable steps to satisfy a legal requireme | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/effective-security-compliance.md |
+| 7 | 23 | 623 | — Protecting privacy data carries significant local, national, and glo | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/effective-security-compliance.md |
+| 7 | 24 | 624 | and the head of each agency to conduct annual reviews of information s | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/effective-security-compliance.md |
+| 7 | 25 | 625 | —GDPR, the emphasis is placed on the rights and protections of the dat | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/effective-security-compliance.md |
+| 7 | 26 | 626 | — Exercise decision-making authority, define the purposes of data proc | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/effective-security-compliance.md |
+| 7 | 27 | 627 | — Helps organizations determine appropriate retention periods for diff | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/effective-security-compliance.md |
+| 7 | 28 | 628 | —The concept has been discussed and put into practice in several juris | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/effective-security-compliance.md |
+| 7 | 29 | 629 | Effective security governance | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/audits-and-assessments.md |
+| 7 | 30 | 630 | 5.5 Explain types and purposes of audits and assessments. | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/audits-and-assessments.md |
+| 7 | 31 | 631 | —Verifying and validating the accuracy, reliability, and effectiveness | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/audits-and-assessments.md |
+| 7 | 32 | 632 | — Evaluate the effectiveness of internal controls, identify noncomplia | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/audits-and-assessments.md |
+| 7 | 33 | 633 | * Regulatory authorities or agencies — Perform assessments to ensure c | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/audits-and-assessments.md |
+| 7 | 34 | 634 | assess an organization’s overall performance, practices, capabilities, | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/audits-and-assessments.md |
+| 7 | 35 | 635 | — External Audit — Carried out by a vendor or contractor that is engag | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/audits-and-assessments.md |
+| 7 | 36 | 636 | * Verify a threat exists — use surveillance, social engineering, netwo | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/audits-and-assessments.md |
+| 7 | 37 | 637 | — Involves simulating real-world attack scenarios to identify vulnerab | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/audits-and-assessments.md |
+| 7 | 38 | 638 | — External — Conducted against the Internet facing hosts of a client's | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/audits-and-assessments.md |
+| 7 | 39 | 639 | ¢ Blue Team — Performs the defensive role by operating monitoring and  | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/audits-and-assessments.md |
+| 7 | 40 | 640 | + Focuses on secure coding practices and building systems with securit | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/audits-and-assessments.md |
+| 7 | 41 | 641 | without directly interacting with them by focusing on collecting publi | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/audits-and-assessments.md |
+| 7 | 42 | 642 | — Traffic or data is sent to the computers, servers, or devices to sol | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/audits-and-assessments.md |
+| 7 | 43 | 643 | — Allow information/system security professionals to see what devices  | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/audits-and-assessments.md |
+| 7 | 44 | 644 | them, this technique is often used by attackers to determine potential | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/audits-and-assessments.md |
+| 7 | 45 | 645 | « Network Sniffi ng — The process Tis E6t Vew Go Coptire Anais Satstes | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/audits-and-assessments.md |
+| 7 | 46 | 646 | — Detecting network intrusions and undesirable traffic, botnets, troja | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/audits-and-assessments.md |
+| 7 | 47 | 647 | Effective security governance | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/security-awareness-practices.md |
+| 7 | 48 | 648 | — Phishing — User guidance and training — Reporting and monitoring | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/security-awareness-practices.md |
+| 7 | 49 | 649 | — Raises awareness and educates employees about the risks and conseque | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/security-awareness-practices.md |
+| 7 | 50 | 650 | — Unusual network traffic, user account activity anomalies, insider th | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/security-awareness-practices.md |
+| 7 | 51 | 651 | and confidentiality and emphasize the importance of adhering to these  | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/security-awareness-practices.md |
+| 7 | 52 | 652 | — Guides users on the risks associated with malicious charging cables  | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/security-awareness-practices.md |
+| 7 | 53 | 653 | * Content development focuses on creating engaging and informative | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/security-awareness-practices.md |
+| 7 | 54 | 654 | — Simulations — Recreating system interfaces or using emulators so par | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/security-awareness-practices.md |
+| 7 | 55 | 655 | * Successfully executing security training means effectively providing | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/security-awareness-practices.md |
+| 7 | 56 | 656 | + Measures the knowledge gained, awareness raised, and behavioral chan | 5.0 Security Program Management and Oversight | High | Y | Y | Y | course-unit-notes/05-security-program-management-and-oversight/security-awareness-practices.md |
+| 7 | 57 | 657 | —5.3 Explain the processes associated with third-party risk assessment | 5.0 Security Program Management and Oversight | High | Y | N | N |  |
 | 7 | 58 | 658 | _(blank/unreadable)_ | 5.0 Security Program Management and Oversight | High | N | N | N |  |
 | 7 | 59 | 659 | SS RULART All | 5.0 Security Program Management and Oversight | High | N | N | N |  |
